@@ -1,0 +1,29 @@
+/* ---------------- Font & Body*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #12133a;
+    color: #FF8000;
+}
+
+/* ----------------- Header */
+
+.heading-header {
+    position: relative;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.header-section {
+  background: url("../images/background2.jpg") no-repeat fixed;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    align-content: center;
+    margin-left: 0%;
+    border-bottom: solid 1px #000;
+}
