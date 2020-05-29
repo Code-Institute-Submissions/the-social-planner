@@ -10,6 +10,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/39f5ad3fd9.js" crossorigin="anonymous"></script>
     <link href="assets/css/style.css" rel="stylesheet" />
     <title>The Social Planner</title>
   </head>
@@ -21,12 +22,13 @@
       <div class="col-12 heading-div">
         <h1 class="heading-header">the social planner</h1>
         <h2 class="heading-tagline">places to eat | places to meet</h2>
-        <p class="heading-desc">
+        <h5 class="heading-desc">
           use the search engine below to filter through countries and cities to
           find your ideal destination
-        </p>
+        </h5>
       </div>
     </header>
+
     <!--Search Section-->
     <section class="search-section container">
       <h2 class="col-12 search-header">search for your ideal destination</h2>
@@ -56,7 +58,65 @@
         <div id="map" col-10 offset-1></div>
       </div>
     </section>
-    <footer></footer>
+
+    <!--Contact Section-->
+    <section class="contact-section container">
+        <h2 class="contact-header">unable to find what you are looking for?</h2>
+        <h5 class="contact-desc">get in touch with one of the team by using the form below</h5>
+        <div class="center-form">
+					<form>
+						<input type="text" name="name" id="fullname" class="form-control" placeholder="full name" required/>
+						<input type="email" name="email" id="emailaddress" class="form-control" placeholder="email address" required/>
+                        <input type="number" name="contact number" id="contactnumber" class="form-control" placeholder="contact number" required/>
+						<textarea rows="5" name="enquiry" id="enquiry" class="form-control" placeholder="please describe your enquiry here" required></textarea>
+						<div class="form-row text-center">
+							<div class="col">
+								<button type="submit" class="btn btn-secondary">send enquiry</button>
+							</div>
+						</div>
+					</form>
+				</div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-8 offset-2 footer-col">
+                <h5 class="footer-header d-none d-sm-block">for the latest social planner updates, visit our social pages</h5>
+                <ul class="list-inline social-icons">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">Linked In</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxaV7QbbG1hEi2XGR5_Tfpg38TZr1hgW8&callback=initMap">
     </script>

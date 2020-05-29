@@ -51,6 +51,7 @@ body {
 .search-header {
     text-align: center;
     margin-top: 2rem;
+    color: #e2e2e2;
 }
 
 .dropdown-section {
@@ -69,6 +70,46 @@ body {
 div #map {
     min-height: 40rem;
     min-width: 70rem;
-    border: 1px solid #d2d2d2;
+    border: 0.5rem solid #d2d2d2;
     margin: 2rem 0 2rem 0;
+}
+
+/* ----------------- Contact Section */
+
+.contact-section {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.form-control {
+    background-color: #d2d2d2;
+    color: #000000;
+    margin: 1rem;
+    min-width: 50rem;
+}
+
+/*----------- Footer */
+
+footer {
+    height: 5rem;
+}
+
+.footer-header {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.list-inline {
+    text-align: center;
+}
+
+.social-icons li a i{
+    color: #d2d2d2;
+    font-size: 1.4rem;
+    margin-top: 0.7rem;
+}
+
+.social-icons li a i:hover {
+    color: #4e4e4e;
 }
