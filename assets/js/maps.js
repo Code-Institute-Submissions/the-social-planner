@@ -1,5 +1,3 @@
-// ----------------- Dropdown Menus
-
 
 // ---------------- Map
 function initMap() {
