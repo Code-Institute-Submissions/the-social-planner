@@ -54,15 +54,14 @@ body {
     color: #e2e2e2;
 }
 
-.dropdown-section {
+.select-section {
     margin-top: 2rem;
 }
 
-.dropdown-toggle {
+.select-menu {
     background-color: #d2d2d2;
     color: #000000;
-    margin: 0 auto;
-    width: 20em;
+    width: 2em;
 }
 
 /* ----------------- Map */

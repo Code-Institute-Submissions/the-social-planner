@@ -37,26 +37,21 @@
 	<section class="search-section container">
 		<h2 class="col-12 search-header">search for your ideal destination</h2>
 		<!--Dropdown Section-->
-		<div class="row dropdown-section">
-			<div class="col-lg-4 dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuContinent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Continent</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-					<button class="dropdown-item" type="button">Action</button>
-				</div>
-			</div>
-			<div class="col-lg-4 dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuCountry" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-					<button class="dropdown-item" type="button">Action</button>
-				</div>
-			</div>
-			<div class="col-lg-4 dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuCity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> City</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-					<button class="dropdown-item" type="button">Action</button>
-				</div>
-			</div>
-		</div>
+        <div class="row select-section">
+		    <select class="custom-select col-lg-4 select-menu">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <div class="col-lg-2"></div>
+            <select class="custom-select col-lg-4 select-menu">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
 		<!--Map Section-->
 		<div class="map-display row">
 			<div id="map" col-10 offset-1></div>
