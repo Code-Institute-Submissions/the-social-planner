@@ -1,0 +1,99 @@
+{
+    "Austria": {
+        "cities": [
+      {"name": "Vienna"
+      },
+      {"name": "Salzburg"
+      }
+    ]},
+    "Belgium": {
+        "cities": [
+      {"name": "Antwerp"
+      },
+      {"name": "Bruges"
+      },
+      {"name": "Brussels"
+      }
+    ]},
+     "France": {
+        "cities": [
+      {"name": "Bordeaux"
+      },
+      {"name": "Marseille"
+      },
+      {"name": "Paris"
+      }
+    ]},
+    "Germany": {
+        "cities": [
+      {"name": "Berlin"
+      },
+      {"name": "Hamburg"
+      },
+      {"name": "Munich"
+      }
+    ]},
+    "Italy": {
+        "cities": [
+      {"name": "Milan"
+      },
+      {"name": "Rome"
+      },
+      {"name": "Venice"
+      }
+    ]},
+    "Netherlands": {
+        "cities": [
+      {"name": "Amsterdam"
+      },
+      {"name": "Rotterdam"
+      },
+      {"name": "Utrecht"
+      }
+    ]},
+    "Poland": {
+        "cities": [
+      {"name": "Gdańsk"
+      },
+      {"name": "Kraków"
+      },
+      {"name": "Warsaw"
+      }
+    ]},
+    "Portugal": {
+        "cities": [
+      {"name": "Braga"
+      },
+      {"name": "Lisbon"
+      },
+      {"name": "Porto"
+      }
+    ]},
+    "Spain": {
+        "cities": [
+      {"name": "Barcelona"
+      },
+      {"name": "Madrid"
+      },
+      {"name": "Seville"
+      }
+    ]},
+    "Sweden": {
+        "cities": [
+      {"name": "Gothenburg"
+      },
+      {"name": "Malmö"
+      },
+      {"name": "Stockholm"
+      }
+    ]},
+    "United Kingdom": {
+        "cities": [
+      {"name": "Edinburgh"
+      },
+      {"name": "London"
+      },
+      {"name": "Manchester"
+      }
+    ]}
+}

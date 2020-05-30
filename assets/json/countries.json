@@ -1,0 +1,34 @@
+[{
+  "name": "Austria",
+  "code": "AT"
+}, {
+  "name": "Belgium",
+  "code": "BE"
+}, {
+  "name": "France",
+  "code": "FR"
+}, {
+  "name": "Germany",
+  "code": "DE"
+}, {
+  "name": "Italy",
+  "code": "IT"
+}, {
+  "name": "Netherlands",
+  "code": "NL"
+},  {
+  "name": "Poland",
+  "code": "PL"
+}, {
+  "name": "Portugal",
+  "code": "PT"
+}, {
+  "name": "Spain",
+  "code": "ES"
+},  {
+  "name": "Sweden",
+  "code": "SE"
+}, {
+  "name": "United Kingdon",
+  "code": "GB"
+}  ]
