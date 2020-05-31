@@ -1,99 +1,99 @@
 {
     "Austria": {
         "cities": [
-      {"name": "Vienna"
-      },
-      {"name": "Salzburg"
-      }
+            {"name": "Vienna"
+             },
+            {"name": "Salzburg"
+            }
     ]},
     "Belgium": {
         "cities": [
-      {"name": "Antwerp"
-      },
-      {"name": "Bruges"
-      },
-      {"name": "Brussels"
-      }
+            {"name": "Antwerp"
+            },
+            {"name": "Bruges"
+            },
+            {"name": "Brussels"
+            }
     ]},
      "France": {
         "cities": [
-      {"name": "Bordeaux"
-      },
-      {"name": "Marseille"
-      },
-      {"name": "Paris"
-      }
+            {"name": "Bordeaux"
+            },
+            {"name": "Marseille"
+             },
+            {"name": "Paris"
+            }
     ]},
     "Germany": {
         "cities": [
-      {"name": "Berlin"
-      },
-      {"name": "Hamburg"
-      },
-      {"name": "Munich"
-      }
+            {"name": "Berlin"
+            },
+            {"name": "Hamburg"
+            },
+            {"name": "Munich"
+            }
     ]},
     "Italy": {
         "cities": [
-      {"name": "Milan"
-      },
-      {"name": "Rome"
-      },
-      {"name": "Venice"
-      }
+            {"name": "Milan"
+            },
+            {"name": "Rome"
+            },
+            {"name": "Venice"
+            }
     ]},
     "Netherlands": {
         "cities": [
-      {"name": "Amsterdam"
-      },
-      {"name": "Rotterdam"
-      },
-      {"name": "Utrecht"
-      }
+            {"name": "Amsterdam"
+            },
+            {"name": "Rotterdam"
+            },
+            {"name": "Utrecht"
+            }
     ]},
     "Poland": {
         "cities": [
-      {"name": "Gdańsk"
-      },
-      {"name": "Kraków"
-      },
-      {"name": "Warsaw"
-      }
+            {"name": "Gdańsk"
+            },
+            {"name": "Kraków"
+            },
+            {"name": "Warsaw"
+            }
     ]},
     "Portugal": {
         "cities": [
-      {"name": "Braga"
-      },
-      {"name": "Lisbon"
-      },
-      {"name": "Porto"
-      }
+            {"name": "Braga"
+            },
+            {"name": "Lisbon"
+            },
+            {"name": "Porto"
+            }
     ]},
     "Spain": {
         "cities": [
-      {"name": "Barcelona"
-      },
-      {"name": "Madrid"
-      },
-      {"name": "Seville"
-      }
+            {"name": "Barcelona"
+            },
+            {"name": "Madrid"
+            },
+            {"name": "Seville"
+             }
     ]},
     "Sweden": {
         "cities": [
-      {"name": "Gothenburg"
-      },
-      {"name": "Malmö"
-      },
-      {"name": "Stockholm"
-      }
+            {"name": "Gothenburg"
+            },
+            {"name": "Malmö"
+            },
+            {"name": "Stockholm"
+            }
     ]},
     "United Kingdom": {
         "cities": [
-      {"name": "Edinburgh"
-      },
-      {"name": "London"
-      },
-      {"name": "Manchester"
-      }
+            {"name": "Edinburgh"
+            },
+            {"name": "London"
+            },
+            {"name": "Manchester"
+            }
     ]}
 }

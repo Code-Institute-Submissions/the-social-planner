@@ -1,4 +1,5 @@
 // ----------------- Country Dropdown Menu - codebyamir
+let currentCities;
 var countryDropdown = $("#country-dropdown");
 
 countryDropdown.empty();
@@ -22,14 +23,18 @@ var cityDropdown = $("#city-dropdown");
 const cities = ('assets/json/cities.json');
 
 cityDropdown.append(`<option selected="true" disabled>select a city</option>`);
-
-countryDropdown.on("change", function(event){
+countryDropdown.on("change", function(city) {
+    let selectedcountry = $("#country-dropdown option:selected").text();
     $.getJSON(cities, function(data){
         cityDropdown.empty();
         cityDropdown.append('<option selected="true" disabled>select a city</option>');
-        $.each(data[cityDropdown.val()], function(key, entry){
-            cityDropdown.append($('<option></option>').attr('value', entry.name).text(entry.name))
-        })
+        for (const city in data) {
+            if (city.toLowerCase() === selectedcountry.toLowerCase()) {
+                currentCities = data[city].cities;
+                currentCities.forEach(current => {
+                    cityDropdown.append($('<option></option>').attr('value', current.name).text(current.name));
+                })
+            }
+        }
     })
-})
-
+});
