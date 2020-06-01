@@ -6,13 +6,13 @@ function initMap() {
 }
 
 // --------------- Markers
-/*var marker;
+var marker;
 var placeInfo;
 var markers = [];
 var restMarkers = [];
 var barMarkers = [];
 
-
+/*
 function createRestMarker(results){
     var restMarker = {
         url: "assets/images/restmarker.png",
@@ -57,7 +57,7 @@ function createBarMarker(results){
         placeInfo.open(map, this);
     });
     barMarkers.push(marker);
-}
+}*/
 
 function DeleteMarkers() {
 
@@ -76,12 +76,10 @@ function DeleteMarkers() {
     restMarkers = [];
     barMarkers = [];
 
-};*/
+};
 //------------------------------Location Finding
 
-var cityDropdown;
-
-$(cityDropdown).on("change", function(search){
+/* $(cityDropdown).on("change", function(search){
     var search = {
         query: currentCities.name,
         location: center,
@@ -104,17 +102,16 @@ function createMarker(place) {
         map: map,
         position: place.geometry.location
     });
-}
-
-/*$(cityDropdown).on("change", function(){
+} */
+$('#city-dropdown').on("change", function(){
     DeleteMarkers();
         $("#city-dropdown").prop("disabled", true);
     
         var request = {
-            query: current.name,
+            query: currentCities.name,
             fields: ['geometry'],
         };
-        console.log(request);
+        console.log('hello');
         var service = new google.maps.places.PlacesService(map);
 
         service.findPlaceFromQuery(request, function(results, status) {
@@ -126,4 +123,4 @@ function createMarker(place) {
      }
   });
 }
-)*/
+)
