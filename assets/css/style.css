@@ -3,7 +3,7 @@
 
 body {
     font-family: "Playfair Display", serif;
-    background-color: #828282;
+    background-color: #979797;
     color: #d2d2d2;
 }
 
@@ -55,37 +55,42 @@ body {
 }
 
 .select-section {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
-.select-menu {
-    background-color: #d2d2d2;
-    color: #000000;
-    width: 2em;
-}
 
 /* ----------------- Map */
 
 div #map {
-    min-height: 40rem;
-    min-width: 70rem;
+    min-height: 35rem;
+    min-width: 65rem;
     border: 0.5rem solid #d2d2d2;
-    margin: 2rem 0 2rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: block;
 }
 
 /* ----------------- Contact Section */
 
 .contact-section {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
     text-align: center;
 }
 
 .form-control {
     background-color: #d2d2d2;
     color: #000000;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     min-width: 50rem;
+}
+
+.center-form button {
+    margin-top: 1rem;
 }
 
 /*----------- Footer */
