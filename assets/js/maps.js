@@ -6,9 +6,10 @@ function initMap() {
 }
 
 // --------------- Markers
-var marker;
-var infowindow;
-var restMarkers= [];
+/*var marker;
+var placeInfo;
+var markers = [];
+var restMarkers = [];
 var barMarkers = [];
 
 
@@ -75,5 +76,54 @@ function DeleteMarkers() {
     restMarkers = [];
     barMarkers = [];
 
-};
+};*/
 //------------------------------Location Finding
+
+var cityDropdown;
+
+$(cityDropdown).on("change", function(search){
+    var search = {
+        query: currentCities.name,
+        location: center,
+        radius: 6000,
+        types: ['bar', 'restaurant']
+    };
+    var service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
+})
+function callback(results, status) {
+    if(status == google.maps.places.PlacesServicesStatus.OK){
+        for (var i = 0; i < results.length; i++){
+            createBarMarker(results[i]);
+        }
+    }
+}
+function createMarker(place) {
+    var placeLoc = place.geometry.location;
+    var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+    });
+}
+
+/*$(cityDropdown).on("change", function(){
+    DeleteMarkers();
+        $("#city-dropdown").prop("disabled", true);
+    
+        var request = {
+            query: current.name,
+            fields: ['geometry'],
+        };
+        console.log(request);
+        var service = new google.maps.places.PlacesService(map);
+
+        service.findPlaceFromQuery(request, function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+    }
+        map.setCenter(results[0].geometry.location);
+     }
+  });
+}
+)*/
