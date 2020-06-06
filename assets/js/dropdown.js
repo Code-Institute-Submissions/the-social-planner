@@ -1,5 +1,5 @@
 // ----------------- Country Dropdown Menu - codebyamir
-/*let currentCities;
+let currentCities;
 var countryDropdown = $("#country-dropdown");
 
 countryDropdown.empty();
@@ -37,8 +37,8 @@ countryDropdown.on("change", function(city) {
             }
         }
     })
-});*/
-async function getData(geonameId) {
+});
+/*async function getData(geonameId) {
     let response = await fetch(`//www.geonames.org/childrenJSON?geonameId=${geonameId}&style=long`);
     return response.json();
 }
@@ -80,7 +80,7 @@ async function getCountriesInContinents(geonameId)
         $select.append($optgroup);
     });
 };
-getCountriesInContinents('6295630');
+getCountriesInContinents('6295630');*/
 
 
 

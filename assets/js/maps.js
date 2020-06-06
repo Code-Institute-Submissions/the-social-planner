@@ -11,8 +11,9 @@ var placeInfo;
 var markers = [];
 var restMarkers = [];
 var barMarkers = [];
+var callCounter = 0;
 
-/*
+
 function createRestMarker(results){
     var restMarker = {
         url: "assets/images/restmarker.png",
@@ -57,7 +58,7 @@ function createBarMarker(results){
         placeInfo.open(map, this);
     });
     barMarkers.push(marker);
-}*/
+}
 
 function DeleteMarkers() {
 
@@ -95,32 +96,83 @@ function callback(results, status) {
             createBarMarker(results[i]);
         }
     }
-}
+}*/
 function createMarker(place) {
     var placeLoc = place.geometry.location;
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location
     });
-} */
+}
 $('#city-dropdown').on("change", function(){
     DeleteMarkers();
         $("#city-dropdown").prop("disabled", true);
     
         var request = {
-            query: currentCities.name,
+            query: cityDropdown.val(),
             fields: ['geometry'],
         };
-        console.log('hello');
+        console.log(cityDropdown.val());
+
         var service = new google.maps.places.PlacesService(map);
 
         service.findPlaceFromQuery(request, function(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
         createMarker(results[i]);
+    };
+        
+       } })})
+/*
+ function callback(results, status) {
+        console.log("results", results);
+        callCounter = 0;
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+                var place = results[i];
+                if (marker != undefined) {
+                    marker.setMap(null);
+                }
+                createMarker(results[i]);
+            }
+
+            var searchRestaurant = {
+                location: { lat: map.getCenter().lat(), lng: map.getCenter().lng() }, 
+                radius: '5000',
+                type: ['restaurant'],
+            }
+
+            service.nearbySearch(searchRestaurant, callbackRestaurant);
+
+            var searchBar = {
+                location: { lat: map.getCenter().lat(), lng: map.getCenter().lng() }, 
+                radius: '5000',
+                type: ['bar'],
+            }
+
+            service.nearbySearch(searchBar, callbackBar);
+*/
+            /*
+function callbackRestaurant(results, status) {
+        console.log("restaurant results", results);
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+                var placeRestaurant = results[i];
+
+                createRestMarker(results[i]);
+            }
+        }
+        checkCallCounter();
     }
-        map.setCenter(results[0].geometry.location);
-     }
-  });
-}
-)
+
+function callbackBar(results, status) {
+        console.log("bar results", results);
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+                var placeBar = results[i];
+
+                createBarMarker(results[i]);
+            }
+        }
+        checkCallCounter();
+    }}}*/
