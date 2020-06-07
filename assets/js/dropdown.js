@@ -38,6 +38,15 @@ countryDropdown.on("change", function(city) {
         }
     })
 });
+
+/* ----------------- Reset Button */
+function Reset() {
+        var dropDownCountry = document.getElementById("country-dropdown");
+        dropDownCountry.selectedIndex = 0;
+        var dropDownCity = document.getElementById("city-dropdown");
+        dropDownCity.selectedIndex = 0;
+    }
+
 /*async function getData(geonameId) {
     let response = await fetch(`//www.geonames.org/childrenJSON?geonameId=${geonameId}&style=long`);
     return response.json();
