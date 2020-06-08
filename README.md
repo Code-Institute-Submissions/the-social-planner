@@ -1,8 +1,8 @@
 ![Site Screenshot](assets/images/screenshot1.png)
-The Social Planner is a one-page website application, designed to search for Bars and Restaurants in major cities around the world.
+The Social Planner is a one-page website application, designed to search for Bars and Restaurants in major cities across Europe.
 
 # UX
-The purpose of the site is to provide a search of Restaurants and Bars on a global scale, dependent on the city selected.
+The purpose of the site is to provide a search of Restaurants and Bars on a European scale, dependent on the city selected.
 
 ### User Stories
 A family has booked a trip in the summer. The parents would like to see what dining options they have close to where they are staying. They use the social planner to find restaurants in their vacinity.
