@@ -18,7 +18,7 @@ A couple are booking a city break, but the man is gluten free. They are unable t
 ### Search fields
 The search fields consist of a list of countries, and once a country is selected, the cities dropdown list populates with cities from that country.
 ### Google Maps Window
-When a city is selected, the Google Maps window will zoom into the selected area and display restaurants and bars within a 2km radius.
+When a city is selected, the Google Maps window will zoom into the selected area and display restaurants and bars within a 5km radius.
 ### Footer
 The footer consists of social pages for the user to follow and keep up to date with the latest news fro the Social planner team.
 
@@ -62,10 +62,11 @@ Once this was added, I was able to zoom in on the city selected. I then tested t
 - I clicked through every country and city to test that they zoomed in on the correct place. I stumbled upon and error where 'Porto' in Portugal was not being picked up correctly, but instead showed a place in Boston, USA. This resulted in Porto being removed from the site, to avoid further complications.
 - I noticed when performing this test, that each time I selected a city, it would not allow me to re-select another city, even when the country was changed. I added a reset button to reset the values to 0 when selected, but this didn't help. After testing different lines of code, I realised that the issue lied within the function for the cities to be located, an additional line of code that was not necessary, this was removed and the issue was fixed.
 - After the above test, I decided the keep the reset button to reset the dropdown menu values.
-When every city was tested and checked, I then proceeded to locate specific places in within 2km of the location, restaurants and bars to be more precise.
+When every city was tested and checked, I then proceeded to locate specific places in within 5km of the location, restaurants and bars to be more precise.
 - I tested searching for the restaurants in the local area by using the Places API in Google Maps, but this did not come up with all the restaurants in the area, only a select handful as the below image details for the London search.
 ![London Markers](assets/images/london.png) 
-
+- After trying to fix the issue with the lack of markers, and after speaking to a member of the family, this may be down to the current pandemic we are in and has reduced the amount of places open. As I cannot understand why only a few are showing.
+- This is a bug which I have been unable to fix, after trying to play with the zoom filters. Hopefully in due course and with more knowledge, I cna finish and style this project in the future.
 ### EmailJS
 Once the form was created, I linked this to EmailJS. When the enquiry template is completed the email gets sent to my personal address. 
 I tested this out by sending emails with enquries on, as per the below image.

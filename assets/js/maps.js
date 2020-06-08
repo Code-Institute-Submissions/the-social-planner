@@ -6,7 +6,7 @@ var service;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
+        zoom: 14,
         center: {
             lat: 51.5000478,
             lng: -0.1461543
@@ -41,7 +41,7 @@ $('#city-dropdown').on("change", function() {
             });
             var request = {
                 location: {lat: map.getCenter().lat(), lng: map.getCenter().lng()},
-                radius: '2000',
+                radius: '5000',
                 type: ['restaurant', 'bar']
             };
             service = new google.maps.places.PlacesService(map),
