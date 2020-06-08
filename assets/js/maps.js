@@ -15,6 +15,7 @@ function initMap() {
 }
 
 //------------------------- Markers
+
 function createMarker(results) {
     var location = results.geometry.location;
     var marker = new google.maps.Marker({
@@ -41,7 +42,7 @@ $('#city-dropdown').on("change", function() {
             var request = {
                 location: {lat: map.getCenter().lat(), lng: map.getCenter().lng()},
                 radius: '2000',
-                type: ['restaurant']
+                type: ['restaurant', 'bar']
             };
             service = new google.maps.places.PlacesService(map),
             service.nearbySearch(request, callback);

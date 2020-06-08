@@ -63,7 +63,7 @@ Once this was added, I was able to zoom in on the city selected. I then tested t
 - I noticed when performing this test, that each time I selected a city, it would not allow me to re-select another city, even when the country was changed. I added a reset button to reset the values to 0 when selected, but this didn't help. After testing different lines of code, I realised that the issue lied within the function for the cities to be located, an additional line of code that was not necessary, this was removed and the issue was fixed.
 - After the above test, I decided the keep the reset button to reset the dropdown menu values.
 When every city was tested and checked, I then proceeded to locate specific places in within 2km of the location, restaurants and bars to be more precise.
-- I tested searching for the restaurants in the local area by using the Places API in Google Maps, but this did not come up with all the restaurants in the area, only a select handful as the below image details.
+- I tested searching for the restaurants in the local area by using the Places API in Google Maps, but this did not come up with all the restaurants in the area, only a select handful as the below image details for the London search.
 ![London Markers](assets/images/london.png) 
 
 ### EmailJS
