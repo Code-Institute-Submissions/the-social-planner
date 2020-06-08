@@ -1,3 +1,4 @@
+![Site Screenshot](assets/images/screenshot1.png)
 The Social Planner is a one-page website application, designed to search for Bars and Restaurants in major cities around the world.
 
 # UX
