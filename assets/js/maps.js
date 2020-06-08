@@ -63,15 +63,15 @@ function createBarMarker(results){
 function DeleteMarkers() {
 
     for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(null);
+        markers[i].setMap(map);
     }
 
     for (var i = 0; i < restMarkers.length; i++) {
-        restMarkers[i].setMap(null);
+        restMarkers[i].setMap(map);
     }
 
     for (var i = 0; i < barMarkers.length; i++) {
-        barMarkers[i].setMap(null);
+        barMarkers[i].setMap(map);
     }
     markers = [];
     restMarkers = [];
@@ -110,7 +110,7 @@ $('#city-dropdown').on("change", function(){
     
         var request = {
             query: cityDropdown.val(),
-            fields: ['geometry'],
+            fields: ['geometry.location'],
         };
         console.log(cityDropdown.val());
 
