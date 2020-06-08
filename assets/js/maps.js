@@ -1,11 +1,6 @@
 var map;
 var marker;
 var service;
-var placeInfo;
-var markers = [];
-var restMarkers = [];
-var barMarkers = [];
-var callCounter = 0;
 
 // ------------------- Initializing the Map
 
@@ -20,11 +15,11 @@ function initMap() {
 }
 
 //------------------------- Markers
-function createMarker(place) {
-    var location = place.geometry.location;
+function createMarker(results) {
+    var location = results.geometry.location;
     var marker = new google.maps.Marker({
         map: map,
-        position: place.geometry.location
+        position: results.geometry.location
     });
 }
 
@@ -32,7 +27,7 @@ function createMarker(place) {
 
 
 $('#city-dropdown').on("change", function() {
-    let resultsMap = map;
+    var resultsMap = map;
     var geocoder = new google.maps.Geocoder();
     geocoder.geocode({
         'address': cityDropdown.val(),
@@ -44,19 +39,18 @@ $('#city-dropdown').on("change", function() {
                 position: results[0].geometry.location
             });
             var request = {
-                location: results[0].geometry.location,
+                location: {lat: map.getCenter().lat(), lng: map.getCenter().lng()},
                 radius: '2000',
-                type: ['restaurant', 'meal_delivery', 'meal_takeaway', 'bar']
+                type: ['restaurant']
             };
             service = new google.maps.places.PlacesService(map),
-                service.nearbySearch(request, callback);
+            service.nearbySearch(request, callback);
+            console.log(request.type);
         } else {
             alert('Geocode was not successful for the following reason: ' + status);
         }
     });
 });
-
-
 
 function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {

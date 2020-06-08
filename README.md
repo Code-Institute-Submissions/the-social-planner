@@ -17,7 +17,7 @@ A couple are booking a city break, but the man is gluten free. They are unable t
 ### Search fields
 The search fields consist of a list of countries, and once a country is selected, the cities dropdown list populates with cities from that country.
 ### Google Maps Window
-When a city is selected, the Google Maps window will zoom into the selected area and display restaurants and bars within a 5 km radius.
+When a city is selected, the Google Maps window will zoom into the selected area and display restaurants and bars within a 2km radius.
 ### Footer
 The footer consists of social pages for the user to follow and keep up to date with the latest news fro the Social planner team.
 
